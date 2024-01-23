@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockey's Website</title>
+
+    <!-- Taiwind and DaisyUi  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Color -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#FF4240',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Google Manrope Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .btn-primary {
+            background-color: #FF4240;
+            color: #ffff;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body class="font-manrope">
+    <header class="container mx-auto my-10">
+
+        <!-- Nav Section -->
+
+        <nav>
+            <div class="navbar justify-evenly">
+                <h2 class="text-3xl font-extrabold">Hockey<span class="text-[#FF4240]">'</span>s</h2>
+                <div class=" text-center items-center space-x-7">
+                    <a class="text-[#FF4240]" href="">Home</a>
+                    <a href="">About</a>
+                    <a href="">Pages</a>
+                    <a href="">Blog</a>
+                    <a href="">Contact</a>
+                </div>
+                <div>
+                    <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <div class="indicator">
+                        <button class="btn btn-primary">Get ticket</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner Section -->
+
+        <section class="my-24">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute gap-2 flex bottom-2 transform -translate-y-1/2 left-5 right-5">
+                        <a href="#slide4" class="btn btn-circle bg-[#131318] text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-[#131318] text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./Images/1.png" class="w-full" />
+                    <div class="absolute gap-2 flex bottom-2 transform -translate-y-1/2 left-5 right-5">
+                        <a href="#slide1" class="btn btn-circle bg-[#131318] text-white">❮</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+
+        <!-- Professional Hockey's Section-->
+
+        <section class="my-24">
+            <div class="text-center space-y-8">
+                 <h2 class="text-3xl font-extrabold">Professional Hockeys Club</h2>
+                 <p class="text-1xl text-[#131318] pb-10">Which clubs are top in all over the country. There are some of players, coach, training ground and player facilities progression.</p>
+            </div>
+            <div class="text-center flex space-x-20 justify-center">
+                <div class="space-y-5">
+                    <div class="radial-progress w-32 h-32 text-2xl font-bold text-red-500" style="--value:87; thick" role="progressbar">87%</div>
+                    <h2 class="text-2xl font-bold">Prayer Facility</h2>
+                    <p>Players kits and firts-aid every facilities <br> they have.</p>
+                </div>
+                <div class="space-y-5">
+                    <div class="radial-progress w-32 h-32 text-2xl font-bold text-green-500" style="--value:96;" role="progressbar">95%</div>
+                    <h2 class="text-2xl font-bold">Experienced Coach</h2>
+                    <p>Players are trained by the so much <br> experienced coach.</p>
+                </div>
+                <div class="space-y-5">
+                    <div class="radial-progress w-32 h-32 text-2xl font-bold text-yellow-500" style="--value:90;" role="progressbar">90%</div>
+                    <h2 class="text-2xl font-bold">Senior Player</h2>
+                    <p>In this league there are many senior players. <br> They are playing every league. </p>
+                </div>
+                <div class="space-y-5">
+                    <div class="radial-progress w-32 h-32 text-2xl font-bold text-blue-600" style="--value:80;" role="progressbar">80%</div>
+                    <h2 class="text-2xl font-bold">Training Ground</h2>
+                    <p>Hockey players need a training ground for the practice. <br> And we provide this for them.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Professional Hockey's Section end-->
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
